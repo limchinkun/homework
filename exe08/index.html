@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exe08: animation</title>
+        <style>
+            @keyframes my-animation{
+                0%{left : 0px;}
+                100%{left:350px;}
+            }
+
+            div{
+                width: 200px;
+                height: 60px;
+                color: blueviolet;
+                background-color: yellow;
+                position:relative;
+                animation-name: my-animtion;
+                animation-duration: 5s;
+            }
+
+            #route1 {anition-timing-function: ease;}
+            #route2 {anition-timing-function: ease-in;}
+            #route3 {anition-timing-function: ease-out;}
+            #route4 {anition-timing-function: ease-in-out;}
+            #route5 {anition-timing-function: linear;}
+        </style>
+    </head>
+    <body>
+        <h1>animation-timing-function</h1>
+        <div id="route1">ease</div>
+        <div id="route2">ease-in</div>
+        <div id="route3">ease-out</div>
+        <div id="route4">ease-in-out</div>
+        <div id="route5">linear</div>
+    </body>
+</html>
