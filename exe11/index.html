@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exe11: RWD Sample</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .row::after {
+                content: "";
+                clear: left;
+                display: table;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+                width: 100%;
+            }
+
+            @media only screen and (min-width: 481px) {
+                .col-s-25 { width: 25%; }
+                .col-s-75 { width: 75%; }
+                .col-s-100 { width: 100%; }
+            }
+            @media only screen and (min-width: 769px) {
+                .col-s-25 { width: 25%; }
+                .col-s-75 { width: 75%; }
+            }
+            html {
+                font-family: Helvetica, sans-serif;
+            }
+            header {
+                background-color: aqua;
+                color: blue;
+                padding: 15px;
+            }
+            .menu ul {
+                margin: 0;
+            }
+            .menu li {
+                background-color: deepskyblue;
+                color: white;
+                padding: 5px;
+                margin-bottom: 5px;
+                box-shadow: gray 1px 2px 2px;
+            }
+            aside {
+                background-color: deepskyblue;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                font-size: 15px;
+                box-shadow: gray 3px 3px 3px;
+            }
+            footer {
+                background-color: lightgray;
+                color: blue;
+                text-align: center;
+                font-size: 18px;
+                padding: 15px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Deep Sea</h1>
+            <p>Deep Learning</p>
+        </header>
+        <div class="row">
+            <nav class="col-25 col-s-25 menu">
+                <ul>
+                    <li>SSE Certificate</li>
+                    <li>SEO Optimize</li>
+                    <li>Facebook Adv</li>
+                    <li>Google Adv</li>
+                </ul>
+            </nav>
+            <article class="col-50 col-s-75">
+                <h1>Deep Learning</h1>
+                <p>paragraph 1</p>
+                <img src="" width="300">
+            </article>
+            <div class="col-25 col-s-100">
+                <aside>
+                    <h2>SSE</h2>
+                    <p>Silicon Education</p>
+                    <h2>SEO Optimize</h2>
+                    <p>SEO Optimizing</p>
+                    <h2>Information</h2>
+                    <p>Big Data, IoT, Cloud, 3D printing</p>
+                </aside>
+            </div>
+        </div>
+        <footer>
+            <p>my address</p>
+        </footer>
+    </body>
+</html>
