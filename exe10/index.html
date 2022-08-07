@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>exe10: @media</title>
+        <style>
+            body {
+                background-color: yellow;
+            }
+
+            @media screen and (min-width:1280px){
+                body{
+                    background-color: yellowgreen;
+                    font-size:large;
+                }
+            }
+
+            @media screen and (max-width: 1279px) and (min-width: 481px){
+                body{
+                    background-color: lightblue;
+                    font-size: medium;
+                }
+            }
+
+            @media screen and (max-width: 1279px) and (min-width: 481px){
+                body{
+                    background-color: lightgray;
+                    font-size: small;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>change window width</p>
+    </body>
+</html>
