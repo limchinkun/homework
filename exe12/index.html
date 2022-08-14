@@ -7,7 +7,11 @@
     <body>
         <p id="ex">HTML+CSS</p>
         <button type="button" onclick="exFun()">OK</button>
-        <script src="/exe12/exScript.js"></script>
+        <script>
+            function exFun(){
+                document.getElementById("ex").innerHTML = "JavaScript";
+            }
+        </script>
 
         <p>Simple output</p>
         <button type="button" onclick="document.write(100)">OK</button>
