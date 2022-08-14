@@ -34,19 +34,44 @@
             document.getElementById("name02").innerHTML = myName02;
         </script>
 
-       
-
-        <p>Simple output05</p>
-        <p id="std"></p>
+        <p>Simple output04</p>
+        <p id="name03"></p>
         <script>
-            var student = {
-                firstName = "Jinkun",
-                lastName = "Lim",
-                id:1234
-            };
-            document.getElementById("std").innerHTML = student.lastName + student.firstName + "'s id: " + student.id;
+            var x1 = 10;
+            var x2 = 19.9;
+            var x3 = 075;
+            var x4 = 0x5566;
+            document.getElementById("name03").innerHTML = x1 + "<br>" + x2 + "<br>" + x3 + "<br>" + x4;
         </script>
 
+        <p>Simple output05</p>
+        <p id="name04"></p>
+        <script>
+            var student = {
+                firstName : "Jinkun",
+                lastName : "Lim",
+                id : "1234"
+            };
+            document.getElementById("name04").innerHTML = student.lastName + " " + student.firstName + " text";
+        </script>
 
+        <p>Simple output06</p>
+        <p id="operation01"></p>
+        <p id="operation02"></p>
+        <p id="operation03"></p>
+        <script>
+            var i = 1;
+            var x = 9;
+            var y = 3;
+            var z1 = x + y;
+            var z2 = x - y;
+            var z3 = x * y;
+            var z4 = x / y;
+            var z5 = x % y;
+            var m1 = x + i++;
+            var m2 = x + ++i;
+            document.getElementById("operation01").innerHTML = z1 + "<br>" + z2 + "<br>" + z3 + "<br>" + z4 + "<br>" + z5;
+            document.getElementById("operation02").innerHTML = m1 + "<br>" + m2;
+        </script>
     </body>
 </html>
