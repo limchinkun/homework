@@ -1,0 +1,8 @@
+更改HTML元素内容
+更改HTML元素属性内容
+更改CCS属性内容
+现实或隐藏HTML元素
+
+document.getElementByID(id)
+document.getElementByID(id).innerHTML
+document.write()
