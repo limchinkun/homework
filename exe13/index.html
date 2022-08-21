@@ -21,15 +21,16 @@
                 document.getElementById("ex02").innerHTML = "Small";
             }
         </script>
+        <hr>
 
         <p>Date().getHours returns hours</p>
-        <button onclick="exDate">OK</button>
+        <button onclick="exDate()">OK</button>
         <p id="numHour"></p>
         <p id="msg"></p>
         <script>
             function exDate(){
                 var timeHour = new Date().getHours();
-                document.getElementById("numHour").innerHTML = "Hours = " + timeHour;
+                document.getElementById("numHour").innerHTML = timeHour;
                 if(timeHour <= 8){
                     document.getElementById("msg").innerHTML = "Morning";
                 }
@@ -41,9 +42,10 @@
                 }
             }
         </script>
+        <hr>
 
         <p>Date().getDay() returns day value</p>
-        <button onclick="exDay">OK</button>
+        <button onclick="exDay()">OK</button>
         <p id="dayMsg"></p>
         <script>
             function exDay(){
@@ -60,12 +62,13 @@
                 }
             }
         </script>
+        <hr>
 
 
-        <button onclick="exWeekDay">Click to prompt input window!</button>
+        <button onclick="exWeekDay()">Click to prompt input window!</button>
         <script>
             function exWeekDay(){
-                var numInput = window.prompt{"Please enter 0~6",""};
+                var numInput = window.prompt("Please enter 0~6","");
                 switch (Number(numInput)){
                     case 0:
                         window.alert("Sunday");
@@ -89,7 +92,7 @@
                         window.alert("Saturday");
                         break;
                     default:
-                        window.alert("Invalid. Please enter 0~6!!!")
+                        window.alert("Invalid. Please enter 0~6!!!");
                 }
             }
         </script>
