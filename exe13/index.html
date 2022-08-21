@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Java Script Logic statement</title>
+    </head>
+    <body>
+        <p>math.random() returns random value between 0 and 1</p>
+        <p id="ex01"></p>
+        <p id="ex02"></p>
+        <script>
+            var ranData;
+            ranData = Math.random();
+            document.getElementById("ex01").innerHTML = "Random number is " + ranData;
+
+            if(ranData > 0.5){
+                document.getElementById("ex02").innerHTML = "Big";
+            }
+
+            else{
+                document.getElementById("ex02").innerHTML = "Small";
+            }
+        </script>
+
+        <p>Date().getHours returns hours</p>
+        <button onclick="exDate">OK</button>
+        <p id="numHour"></p>
+        <p id="msg"></p>
+        <script>
+            function exDate(){
+                var timeHour = new Date().getHours();
+                document.getElementById("numHour").innerHTML = "Hours = " + timeHour;
+                if(timeHour <= 8){
+                    document.getElementById("msg").innerHTML = "Morning";
+                }
+                else if( timeHour <= 16){
+                    document.getElementById("msg").innerHTML = "Afternoon";
+                }
+                else{
+                    document.getElementById("msg").innerHTML = "Night";
+                }
+            }
+        </script>
+
+        <p>Date().getDay() returns day value</p>
+        <button onclick="exDay">OK</button>
+        <p id="dayMsg"></p>
+        <script>
+            function exDay(){
+                var dayWeek = new Date().getDay();
+                switch (dayWeek){
+                    case 0:
+                        document.getElementById("dayMsg").innerHTML = "Sunday";
+                        break;
+                    case 6:
+                    document.getElementById("dayMsg").innerHTML = "Saturday";
+                        break;
+                    default:
+                        document.getElementById("dayMsg").innerHTML = "Oh no, it's WORKING DAY!!!";
+                }
+            }
+        </script>
+
+
+        <button onclick="exWeekDay">Click to prompt input window!</button>
+        <script>
+            function exWeekDay(){
+                var numInput = window.prompt{"Please enter 0~6",""};
+                switch (Number(numInput)){
+                    case 0:
+                        window.alert("Sunday");
+                        break;
+                    case 1:
+                        window.alert("Monday");
+                        break;
+                    case 2:
+                        window.alert("Tuesday");
+                        break;
+                    case 3:
+                        window.alert("Wednesday");
+                        break;
+                    case 4:
+                        window.alert("Thursday");
+                        break;
+                    case 5:
+                        window.alert("Friday");
+                        break;
+                    case 6:
+                        window.alert("Saturday");
+                        break;
+                    default:
+                        window.alert("Invalid. Please enter 0~6!!!")
+                }
+            }
+        </script>
+
+
+    </body>
+</html>
