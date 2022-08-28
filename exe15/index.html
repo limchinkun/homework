@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Java Script Control Structure</title>
+    </head>
+    <body>
+        <script>
+            var puzzle = 37;
+            var numInput = window.prompt("Please key in a number between 0~100","");
+            do {
+                if ( Number(numInput) > puzzle ) {
+                    window.alert("too BIG");
+                    numInput = window.prompt("Please key in a number between 0~100","");
+                }
+                else {
+                    window.alert("too SMALL");
+                    numInput = window.prompt("Please key in a number between 0~100","");
+                }
+            }      
+            while ( Number(numInput) !== puzzle )
+            window.alert("Right");
+        </script>
+    </body>
+</html>
