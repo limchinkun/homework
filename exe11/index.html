@@ -9,11 +9,13 @@
             * {
                 box-sizing: border-box;
             }
+            
             .row::after {
                 content: "";
                 clear: left;
                 display: table;
             }
+            
             [class*="col-"] {
                 float: left;
                 padding: 15px;
@@ -29,14 +31,17 @@
                 .col-s-25 { width: 50%; }
                 .col-s-75 { width: 50%; }
             }
+            
             html {
                 font-family: Helvetica, sans-serif;
             }
+
             header {
                 background-color: aqua;
                 color: blue;
                 padding: 15px;
             }
+
             .menu ul {
                 margin: 0;
             }
@@ -47,6 +52,7 @@
                 margin-bottom: 5px;
                 box-shadow: gray 1px 2px 2px;
             }
+
             aside {
                 background-color: deepskyblue;
                 color: white;
@@ -62,6 +68,7 @@
                 font-size: 18px;
                 padding: 15px;
             }
+            
             img {
                 max-width: 100%;
                 height: auto;
