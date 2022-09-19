@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Send and return Value</title>
+        <script>
+            function sumFun(x, y){
+                sum = x + y;
+                return sum;
+            }
+        </script>
+    </head>
+    <body>
+        <p> JavaScript function with return data</p>
+        <p id="sample"></p>
+        <button onclick="returnValue()">Return Value</button>
+        <script>
+            function returnValue(){
+                document.getElementById("sample").innerHTML = sumFun(20, 30);
+            }
+        </script>
+    </body>
+</html>
