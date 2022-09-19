@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Array</title>
+    </head>
+    <body>
+        <p>使用JavaScript Array列出项目符号</p>
+        <p id="example"></p>
+        <script>
+            var strList = ["Apple", "Orange", "Banana"];
+            var strLen = strList.length;
+            var ulText;
+            var i;
+
+            ulText = "<ul>";
+            for (i = 0; i< strLen; i++){
+                ulText += "<li>" + strList[i] + "</li>";
+            }
+            ulText += "</ul>"
+            document.getElementById("example").innerHTML = ulText;
+        </script>
+    </body>
+</html>
