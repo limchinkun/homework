@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fahrenheit to Celcius</title>
+        <script>
+            function toC(fahrenheit){
+                return (5/9) * (fahrenheit - 32);
+            }
+        </script>
+    </head>
+    <body>
+        <p>Calculate the celsius using Fahrenheit</p>
+        <p id="ex"></p>
+        <script>
+            document.getElementById("ex").innerHTML = "It is " + toC(104) + " Celcius";
+        </script>
+    </body>
+</html>
