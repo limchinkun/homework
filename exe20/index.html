@@ -4,18 +4,19 @@
         <meta charset="utf-8">
         <title>Fahrenheit to Celcius</title>
         <script>
-            function toC(fahrenheit){
-                return (5/9) * (fahrenheit - 32);
+            function toC(tempF){
+                return (5/9) * (tempF - 32);
             }
         </script>
     </head>
     <body>
         <p>Calculate the celsius using Fahrenheit</p>
-        <input type="number" name="Fahrenheit: " id="tempF">
+        <input type="number" name="Fahrenheit: " id="inputValue">
         <button onclick="convertToC()">Convert</button>
         <p id="ex"></p>
         <script>
             function convertToC(){
+                var tempF = document.getElementById("inputValue");
                 document.getElementById("ex").innerHTML = "It is " + toC(tempF) + " Celcius";
             }
         </script>
