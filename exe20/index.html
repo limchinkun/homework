@@ -11,9 +11,13 @@
     </head>
     <body>
         <p>Calculate the celsius using Fahrenheit</p>
+        <input type="number" name="Fahrenheit: " id="tempF">
+        <button onclick="convertToC()">Convert</button>
         <p id="ex"></p>
         <script>
-            document.getElementById("ex").innerHTML = "It is " + toC(104) + " Celcius";
+            function convertToC(){
+                document.getElementById("ex").innerHTML = "It is " + toC(tempF) + " Celcius";
+            }
         </script>
     </body>
 </html>
