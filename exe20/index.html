@@ -16,7 +16,7 @@
         <p id="ex"></p>
         <script>
             function convertToC(){
-                var tempF = document.getElementById("inputValue");
+                var tempF = Number(document.getElementById("inputValue"));
                 document.getElementById("ex").innerHTML = "It is " + toC(tempF) + " Celcius";
             }
         </script>
