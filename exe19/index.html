@@ -8,14 +8,14 @@
         <p>使用JavaScript Array列出项目符号</p>
         <p id="example"></p>
         <script>
-            var strList = ["Apple", "Orange", "Banana"];
+            var strList = ["Apple", "Orange", "Banana", "Grape", "Watermelon", "Durian", "Kiwi"];
             var strLen = strList.length;
             var ulText;
             var i;
 
             ulText = "<ul>";
-            for (i = 0; i< strLen; i++){
-                ulText += "<li>" + strList[i] + "</li>";
+            for (i = 0; i < strLen; i++){
+                ulText += "<li>" + strList[i+2] + "</li>";
             }
             ulText += "</ul>"
             document.getElementById("example").innerHTML = ulText;
